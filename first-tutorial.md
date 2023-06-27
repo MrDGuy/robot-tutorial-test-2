@@ -6,7 +6,7 @@ Explore with the robot!
 
 ## Step One
 
-Create a Tile map using the ``||tiles:tilemap||`` code to create a map.  Clock on the map icon.
+Load a Tile map using the ``||tiles:tilemap||`` code to load Level1.  Click on the map icon then on "My Assets" and select the level1 tilemap.
 
 ```python
 level1 = tiles.create_map(tilemap("""level1"""))
