@@ -41,10 +41,8 @@ robot.move_forward()
 Determine whether the robot can move using the ``||robot:can move||`` block.
 
 ```python
-if robot.can_move("right"):
-    robot.turn_right()
-elif robot.can_move("left"):
-    robot.turn_left()
+robot.turn_right()
+robot.turn_left()
 
 ```
 
@@ -53,8 +51,7 @@ elif robot.can_move("left"):
 Collect any coins with the detect coin ``||robot:detect coin||`` block.
 
 ```python
-if robot.detect_coin():
-    robot.collect_coin()
+robot.collect_coin()
 ```
 ```assetjson
 {
