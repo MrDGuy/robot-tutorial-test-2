@@ -7,7 +7,7 @@ You will practice moving and turning the robot to reach the goal.
 ```customts
     tiles.loadMap(tiles.createMap(tilemap`level1`))
     game.onUpdate(function() {
-        if (robot.goalReached(sprites.background.autumn)) {
+        if (robot.goalReached()) {
             game.setGameOverEffect(true, effects.confetti)
             game.setGameOverPlayable(true, music.melodyPlayable(music.powerUp), true)
             game.setGameOverMessage(true, "Goal Reached!")
