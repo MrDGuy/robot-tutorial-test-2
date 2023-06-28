@@ -10,6 +10,7 @@ You will practice moving and turning the robot to reach the goal.
 Use the ``||robot:begin screen ||`` code to start your robot on the start tile and set up the tilemap.
 
 ```python
+tiles.load_map(tiles.create_map(tilemap("""level1""")))
 robot.begin_screen()
 ```
 
