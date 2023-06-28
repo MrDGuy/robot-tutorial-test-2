@@ -4,17 +4,6 @@
 
 You will practice moving and turning the robot to reach the goal.
 
-```customts
-    tiles.loadMap(tiles.createMap(tilemap`level1`))
-    robot.beginScreen()
-    game.onUpdate(function () {
-        if (robot.goalReached()) {
-            music.play(music.melodyPlayable(music.powerUp), music.PlaybackMode.UntilDone)
-            game.splash("You reached the goal!")
-            game.reset()
-        }
-    })
-```
 
 ## Step One
 
@@ -58,3 +47,16 @@ Move the robot to the goal square (blue square) to complete the program.
   "tilemap.g.ts": "// Auto-generated code. Do not edit.\nnamespace myTiles {\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile1 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile2 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile3 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const tile4 = image.ofBuffer(hex``);\n    //% fixedInstance jres blockIdentity=images._tile\n    export const transparency16 = image.ofBuffer(hex``);\n\n    helpers._registerFactory(\"tilemap\", function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \"level1\":\n            case \"level1\":return tiles.createTilemap(hex`0a00070004040404040404040404040202020202020203040402020202020202020404020202020202020204040202020202020202040401020202020202020404040404040404040404`, img`\n. . . . . . . . . . \n. . . . . . . . . . \n. . . . . . . . . . \n. . . . . . . . . . \n. . . . . . . . . . \n. . . . . . . . . . \n. . . . . . . . . . \n`, [myTiles.transparency16,myTiles.tile1,myTiles.tile2,myTiles.tile3,sprites.builtin.forestTiles0], TileScale.Sixteen);\n        }\n        return null;\n    })\n\n    helpers._registerFactory(\"tile\", function(name: string) {\n        switch(helpers.stringTrim(name)) {\n            case \"startTile\":\n            case \"tile1\":return tile1;\n            case \"floorTile\":\n            case \"tile2\":return tile2;\n            case \"goalTile\":\n            case \"tile3\":return tile3;\n            case \"coinTile\":\n            case \"tile4\":return tile4;\n            case \"transparency16\":return transparency16;\n        }\n        return null;\n    })\n\n}\n// Auto-generated code. Do not edit.\n"
 }
 ```
+
+```customts
+    tiles.loadMap(tiles.createMap(tilemap`level1`))
+    robot.beginScreen()
+    game.onUpdate(function () {
+        if (robot.goalReached()) {
+            music.play(music.melodyPlayable(music.powerUp), music.PlaybackMode.UntilDone)
+            game.splash("You reached the goal!")
+            game.reset()
+        }
+    })
+```
+
