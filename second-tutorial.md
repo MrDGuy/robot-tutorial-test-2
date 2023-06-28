@@ -53,6 +53,17 @@ Collect any coins with the detect coin ``||robot:detect coin||`` block.
 ```python
 robot.collect_coin()
 ```
+
+```customts
+    game.onUpdate(function () {
+        if (robot.goalReached()) {
+            music.play(music.melodyPlayable(music.powerUp), music.PlaybackMode.UntilDone)
+            game.splash("You reached the goal!")
+            game.reset()
+        }
+    })
+```
+
 ```assetjson
 {
   "README.md": " ",
