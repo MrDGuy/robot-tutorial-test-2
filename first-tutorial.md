@@ -1,26 +1,21 @@
-# Create a Character
+# Meet the robot!
 
 ## Introduction 
 
-Explore with the robot!
+You will practice moving and turning the robot to reach the goal.
+
+```customts
+    tiles.loadMap(tiles.createMap(tilemap`level1`))
+    game.onUpdate(function() {
+        if (robot.goalReached(sprites.background.autumn)) {
+            game.setGameOverEffect(true, effects.confetti)
+            game.setGameOverPlayable(true, music.melodyPlayable(music.powerUp), true)
+            game.setGameOverMessage(true, "Goal Reached!")
+        }
+    })
+```
 
 ## Step One
-
-Load a Tile map using the ``||tiles:tilemap||`` code to load Level1.  Click on the map icon then on "My Assets" and select the level1 tilemap.
-
-```python
-level1 = tiles.create_map(tilemap("""level1"""))
-```
-
-## Step Two
-
-Use the ``||tiles:set current tilemap to ||`` code to reveal the tilemap to the screen
-
-```python
-tiles.load_map(level1)
-```
-
-## Step Three
 
 Use the ``||robot:begin screen ||`` code to start your robot and place the coins
 
@@ -28,7 +23,7 @@ Use the ``||robot:begin screen ||`` code to start your robot and place the coins
 robot.begin_screen()
 ```
 
-## Step Four
+## Step Two
 
 Use the ``||robot:move forward||`` block to move the robot.
 
@@ -36,26 +31,21 @@ Use the ``||robot:move forward||`` block to move the robot.
 robot.move_forward()
 ```
 
-## Step Five
+## Step Three
 
-Determine whether the robot can move using the ``||robot:can move||`` block.
+Change the direction the robot is facing with the ``||robot:turn right||`` and ``||robot:turn left||`` blocks.
 
 ```python
-if robot.can_move("right"):
-    robot.turn_right()
-elif robot.can_move("left"):
-    robot.turn_left()
+robot.turn_right()
+robot.turn_left()
 
 ```
 
-## Step Six
+## Step Four
 
-Collect any coins with the detect coin ``||robot:detect coin||`` block.
+Move the robot to the goal square (blue square) to complete the program.
 
-```python
-if robot.detect_coin():
-    robot.collect_coin()
-```
+
 ```assetjson
 {
   "README.md": " ",
