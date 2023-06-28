@@ -18,7 +18,7 @@ You will practice moving and turning the robot to reach the goal.
 
 ## Step One
 
-Use the ``||robot:begin screen ||`` code to start your robot and place the coins
+Use the ``||robot:begin screen ||`` code to start your robot on the start tile and set up the tilemap.
 
 ```python
 robot.begin_screen()
