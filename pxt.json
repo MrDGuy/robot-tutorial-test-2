@@ -14,7 +14,8 @@
         "README.md",
         "assets.json",
         "main.py",
-        "first-tutorial.md"
+        "first-tutorial.md",
+        "second-tutorial.md"
     ],
     "testFiles": [
         "test.ts"
