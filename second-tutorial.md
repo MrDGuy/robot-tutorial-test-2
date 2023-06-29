@@ -41,6 +41,12 @@ robot.turn_left()
     })
 ```
 
+```package
+  grid=github:microsoft/arcade-grid#v1.3.0
+  tiles=github:microsoft/pxt-tilemaps#v1.12.0
+  robot=github:mrdguy/robot-extension#45f0768a5e0c25e4123c6e65e56115a7d468331b
+```
+
 ```assetjson
 {
   "README.md": " ",
