@@ -27,7 +27,7 @@ Turn the robot right with ``||robot:turn right||`` or turn the robot left with `
 ```python
 robot.turn_right()
 robot.turn_left()
-
+```
 
 ```customts
     tiles.loadMap(tiles.createMap(tilemap`level1`))
